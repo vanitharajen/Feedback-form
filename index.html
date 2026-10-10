@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Feedback Form</title>
+
+</head>
+
+<body class="mt-10 p-2">
+    <div class="w-full max-w-md border border-gray-300 rounded-lg p-6 mx-auto shadow-lg">
+        <h1 class="mt-2 text-2xl font-bold bg-cyan-600 text-center p-4 rounded-md mb-6 text-white">Feedback Form
+        </h1>
+        <Form>
+            <label>Message</label>
+             <textarea id="message" maxlength="200" placeholder="Type your message"
+                class="w-full h-36 p-3 border border-2 border-gray-300 rounded-md resize-none"></textarea>
+                <p id="warning" class="text-sm text-red-500"></p>
+                <p id="count" class="text-right text-sm text-gray-500">0/200 characters</p>
+                
+        </Form>
+        <button class="bg-cyan-600 rounded-md text-white p-2 py-2 font-bold hover:bg-cyan-700">submit</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
